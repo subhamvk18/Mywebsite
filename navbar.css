@@ -1,0 +1,420 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}
+
+.navbar {
+  background-image: linear-gradient(
+    rgba(97, 123, 202, 0.6),
+    rgba(80, 138, 173, 0.7)
+  );
+}
+
+.navhead {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #ffcf40;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.1rem;
+}
+
+.bars {
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+}
+
+.barsbtn {
+  background-color: orange !important;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-right: 50px;
+
+  height: 80vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.a-link {
+  color: #ffcf40 !important;
+
+  text-align: center !important;
+  transition: all 1s ease-in;
+  display: inline-block;
+  font-weight: 1000;
+  font-size: 46px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.a-link:hover {
+  text-decoration: underline !important;
+  transform: translate(-23px, -3px);
+  background-color: rgba(126, 91, 91, 0.6) !important;
+}
+
+.menu {
+  /* background-color: rgba(255, 255, 255, 0.3) !important; */
+  transform: translate(10px, 10px) !important;
+}
+
+.inner {
+  background-image: url("Images/james-harrison-UVMPVIRCF5w-unsplash.jpg");
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  opacity: 0.8;
+  background-attachment: fixed;
+  animation-name: inner;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+}
+
+@keyframes inner {
+  0% {
+    opacity: 0.9;
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0.4;
+    transform: translate(40px, 40px);
+  }
+}
+
+.typewriter {
+  font-family: Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  font-size: 40px;
+  font-weight: 700;
+  border-right: 1px solid orange;
+  box-sizing: border-box;
+  color: yellow;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+    display: none;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+/* End navbar abd BackImage */
+
+/* start About */
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #273d48;
+}
+
+/* start interest */
+
+.in1,
+.in2,
+.in3 {
+  background-image: url("Images/new (5).jpg");
+  height: 300px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  opacity: 0.9;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.6s ease-in;
+}
+
+.inweb,
+.inpyt,
+.inds h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.in1:hover {
+  transform: translateY(-3px);
+}
+
+/* start education */
+
+.a1 {
+  color: thistle !important;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.col1 {
+  background-color: navy;
+  border: 1px solid;
+  width: 100%;
+  padding: 10px;
+}
+
+.cs1 {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.cs1:hover {
+  transform: translateY(-2px);
+}
+
+#pro {
+  height: 3px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body h1 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fb9c2b;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .card-body h5 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #19b356;
+  }
+}
+
+@media (min-width: 701px) {
+  .card-body h5 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #19b356;
+  }
+}
+
+/* :start skills */
+
+#skill {
+  width: 100%;
+
+  background-image: url("Images/ski1 (2).jpg");
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.web .item {
+  margin-top: 10px;
+}
+
+.web .progress {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.code .item {
+  margin-top: 10px;
+}
+
+.code .progress {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.item h1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+@media (min-width: 701px) {
+  #skill {
+    height: 60vh;
+  }
+}
+
+/* startprojects*/
+
+.pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card1 {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  opacity: 1;
+}
+
+@media (min-width: 701px) {
+  .proimg {
+    width: 650px;
+  }
+
+  .card {
+    width: 650px;
+    padding-left: 140px;
+  }
+
+  .prolink {
+    font-size: 15px !important;
+  }
+
+  .proh {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .proimg {
+    width: 350px;
+  }
+
+  .card {
+    width: 350px;
+  }
+}
+
+.prolink {
+  text-decoration: none;
+  font-size: 10px;
+  color: blueviolet;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.1rem;
+}
+
+.proh {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+}
+
+/* startsocial */
+.social {
+  background-image: url("Images/soc.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 701px) {
+  .social {
+    height: 350px;
+  }
+}
+
+.fas {
+  font-size: 70px;
+  font-weight: bolder;
+
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.fas:hover {
+  transform: translateY(-5px);
+}
+
+.social h2 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: o.2rem;
+  color: white;
+}
+
+.social p {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+/* start footer */
+#footer svg {
+  cursor: pointer;
+}
+
+#footer svg:hover {
+  transform: translateY(-3px);
+}
