@@ -1,13 +1,18 @@
 let card = [{
-        text: "Ecommerce Website Using Django,React,Bootstrap4,Java Script and Ajax",
-        href: "Images/pro1.png",
-        link: "https://github.com/subhamvk18/ecommerce.git",
+        text: "Development and Support Based Project for 3M Company's Financial and Sales Data",
+        href: "Images/3m.png",
+        
     },
     {
         text: "Articales Hub Website Using Django,Java Script,Bootstrap4",
         href: "Images/pro2.png",
         link: "https://github.com/subhamvk18/ecommerce.git",
     },
+      {
+        text: "Ecommerce Website Using Django,React,Bootstrap4,Java Script and Ajax",
+        href: "Images/pro1.png",
+        link: "https://github.com/subhamvk18/ecommerce.git",
+    },      
 ];
 
 let imageurl = card[0].href;
